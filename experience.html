@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-75 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="text-xl font-bold">My Portfolio</a>
+            <div class="space-x-4">
+                <a href="about.html" class="hover:text-blue-500">About</a>
+                <a href="skills.html" class="hover:text-blue-500">Skills</a>
+                <a href="portfolio.html" class="hover:text-blue-500">Portfolio</a>
+                <a href="experience.html" class="hover:text-blue-500">Experience</a>
+                <a href="contact.html" class="hover:text-blue-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-100 py-20 px-6 pt-32 fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 w-0.5 h-full bg-gray-200"></div>
+                <!-- Timeline Item -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gray-200 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-800">1</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Senior Developer</h3>
+                        <p class="text-sm font-medium text-gray-600">Tech Solutions Inc. | 2020 - Present</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                            <li>Led a team of developers to build and maintain web applications.</li>
+                            <li>Architected and implemented new features using modern technologies.</li>
+                            <li>Improved application performance by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Timeline Item -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gray-200 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-gray-800 font-semibold text-lg">2</h1>
+                    </div>
+                    <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-gray-800 text-xl">Junior Developer</h3>
+                        <p class="text-sm font-medium text-gray-600">Web Innovators | 2018 - 2020</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                            <li>Developed and maintained client websites.</li>
+                            <li>Collaborated with designers to create responsive and user-friendly interfaces.</li>
+                            <li>Assisted in the development of a large-scale e-commerce platform.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const currentPath = window.location.pathname.split('/').pop();
+            if (currentPath === '' || currentPath === 'index.html') {
+                navLinks[0].classList.add('text-blue-500', 'font-bold');
+            } else {
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentPath) {
+                        link.classList.add('text-blue-500', 'font-bold');
+                    }
+                });
+            }
+
+            const fadeInSections = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+
+            fadeInSections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
