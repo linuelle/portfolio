@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Hero Section -->
+    <header id="home" class="bg-gray-800 min-h-screen flex flex-col justify-center items-center p-6 relative">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-75 z-50">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <a href="#home" class="text-xl font-bold">My Portfolio</a>
+                <div class="space-x-4">
+                    <a href="#about" class="hover:text-blue-400">About</a>
+                    <a href="#skills" class="hover:text-blue-400">Skills</a>
+                    <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+                    <a href="#experience" class="hover:text-blue-400">Experience</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <img src="https://via.placeholder.com/150" alt="Headshot" class="rounded-full w-40 h-40 mb-4 border-4 border-blue-400">
+        <h1 class="text-5xl font-bold text-center">Jules Doe</h1>
+        <p class="text-xl text-gray-400 mt-2 text-center">Full-Stack Developer & AI Enthusiast</p>
+        <div class="flex space-x-4 mt-6">
+            <a href="#" class="text-gray-400 hover:text-white">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.838 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">About Me</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto text-center">
+                I am a passionate Full-Stack Developer with a love for creating elegant and efficient solutions. With a strong background in both front-end and back-end technologies, I enjoy turning complex problems into simple, beautiful, and intuitive designs. I am always eager to learn new things and take on new challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-800 py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Category -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Programming Languages</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span>JavaScript</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>Python</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>HTML & CSS</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Skill Category -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Frameworks & Libraries</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span>React</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>Node.js</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>Tailwind CSS</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Skill Category -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Tools & Platforms</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span>Git & GitHub</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>Docker</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <span>Webpack</span>
+                            <div class="w-full bg-gray-600 rounded-full h-2.5">
+                                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Projects Section -->
+    <section id="portfolio" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project One</h3>
+                        <p class="text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Two</h3>
+                        <p class="text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Three</h3>
+                        <p class="text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-800 py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 w-0.5 h-full bg-gray-700"></div>
+                <!-- Timeline Item -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gray-700 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Senior Developer</h3>
+                        <p class="text-sm font-medium text-gray-400">Tech Solutions Inc. | 2020 - Present</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-2">
+                            <li>Led a team of developers to build and maintain web applications.</li>
+                            <li>Architected and implemented new features using modern technologies.</li>
+                            <li>Improved application performance by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Timeline Item -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gray-700 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                    </div>
+                    <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Junior Developer</h3>
+                        <p class="text-sm font-medium text-gray-400">Web Innovators | 2018 - 2020</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-2">
+                            <li>Developed and maintained client websites.</li>
+                            <li>Collaborated with designers to create responsive and user-friendly interfaces.</li>
+                            <li>Assisted in the development of a large-scale e-commerce platform.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-400 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-400 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-400 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
